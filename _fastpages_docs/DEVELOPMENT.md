@@ -1,4 +1,5 @@
 # Development Guide
+  - [Local live development on a Windows machine](#windows-development)
   - [Seeing All Options From the Terminal](#seeing-all-commands-in-the-terminal)
   - [Basic usage: viewing your blog](#basic-usage-viewing-your-blog)
   - [Converting the pages locally](#converting-the-pages-locally)
@@ -10,6 +11,16 @@
 
 You can run your fastpages blog on your local machine, and view any changes you make to your posts, including Jupyter Notebooks and Word documents, live.
 The live preview requires that you have Docker installed on your machine. [Follow the instructions on this page if you need to install Docker.](https://www.docker.com/products/docker-desktop)
+
+## Windows development
+Use the [Jekyll Windows installer](https://jekyllrb.com/docs/installation/windows/) There are a number of packages that are not included which you will need to add separately
+
+1. `gem install wdm`
+1. `gem install webrick`
+1. `bundle update jekyll`
+1. `bundle install`
+1. `bundle add webrick`
+1. `bundle exec jekyll serve`
 
 ## Seeing All Commands In The Terminal
 
