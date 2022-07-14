@@ -10,10 +10,10 @@ show_tags: true
 # Ecosystem Function - Water Bird Habitat Identification for Murray-Darling Basin
 
 ## Inputs
-Bi Monthly Inundation layers (25m resolution; MDB extent; bi-monthly time-step; 1988-2020)
+Bi Monthly Inundation layers, [FwDET data](https://data.csiro.au/collection/csiro:50243){:target="\_blank"} (25m resolution; MDB extent; bi-monthly time-step; 1988-2020)
 
 ## Description of methods
-- Same processing applied to each time-step of the bi-monthly inundation data
+- Focal Statistic (sum) is executed for each valid pixel and each time-step of the bi-monthly inundation data, [FwDET](https://data.csiro.au/collection/csiro:50243){:target="\_blank"}
 - 'Valid pixels': values are calculated for all pixels covered by water or within 500m of water coverage.
     - Options to buffer (500m) around each pixel with any water
 - Return nodata for all pixels that are not 'valid pixels'.
@@ -26,5 +26,5 @@ Bi Monthly Inundation layers (25m resolution; MDB extent; bi-monthly time-step; 
     1. 0.5 to 1.5 m depth
 - The combination of neighbourhood radii and depth range mean there will be four output products, each at the bi-monthly time-step.
 ## Outputs
-Bi Monthly layers for area of waterbird habitat (~100m resolution; MDB extent; bi-monthly time-step; 1988-2020) - in as similar file / folder format / structure & naming convention to the inundation data as possible.
+[Bi Monthly layers](https://data.csiro.au/collection/csiro:55490){:target="\_blank"} for area of waterbird habitat (~100m resolution; MDB extent; bi-monthly time-step; 1988-2020) - in as similar file / folder format / structure & naming convention to the inundation data as possible.
 
