@@ -108,12 +108,13 @@ window.onload = wrap_img;
 
 <h2 id="inputs">
 <a class="anchor" href="#inputs" aria-hidden="true"><span class="octicon octicon-link"></span></a>Inputs</h2>
-<p>Bi Monthly Inundation layers (25m resolution; MDB extent; bi-monthly time-step; 1988-2020)</p>
+<p>Bi Monthly Inundation layers, <a href="https://data.csiro.au/collection/csiro:50243" target="\_blank">FwDET data</a> (25m resolution; MDB extent; bi-monthly time-step; 1988-2020)</p>
 
 <h2 id="description-of-methods">
 <a class="anchor" href="#description-of-methods" aria-hidden="true"><span class="octicon octicon-link"></span></a>Description of methods</h2>
 <ul>
-  <li>Same processing applied to each time-step of the bi-monthly inundation data</li>
+  <li>Focal Statistic (sum) is executed for each valid pixel and each time-step of the bi-monthly inundation data, <a href="https://data.csiro.au/collection/csiro:50243" target="\_blank">FwDET</a>
+</li>
   <li>‘Valid pixels’: values are calculated for all pixels covered by water or within 500m of water coverage.
     <ul>
       <li>Options to buffer (500m) around each pixel with any water</li>
@@ -136,7 +137,7 @@ window.onload = wrap_img;
   <li>The combination of neighbourhood radii and depth range mean there will be four output products, each at the bi-monthly time-step.
     <h2 id="outputs">
 <a class="anchor" href="#outputs" aria-hidden="true"><span class="octicon octicon-link"></span></a>Outputs</h2>
-    <p>Bi Monthly layers for area of waterbird habitat (~100m resolution; MDB extent; bi-monthly time-step; 1988-2020) - in as similar file / folder format / structure &amp; naming convention to the inundation data as possible.</p>
+    <p><a href="https://data.csiro.au/collection/csiro:55490" target="\_blank">Bi Monthly layers</a> for area of waterbird habitat (~100m resolution; MDB extent; bi-monthly time-step; 1988-2020) - in as similar file / folder format / structure &amp; naming convention to the inundation data as possible.</p>
   </li>
 </ul>
 
