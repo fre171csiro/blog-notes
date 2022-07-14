@@ -4,6 +4,8 @@ layout: post
 description: Overview of generating a raster (Cloud Optimised GeoTiff, COG) spatial layer to identify potential Water Bird Habitat in the Murray-Darling Basin.
 categories: [markdown]
 title: Water Bird Habitat Identification
+show_image: 
+show_tags: true
 ---
 # Ecosystem Function - Water Bird Habitat Identification for Murray-Darling Basin
 
